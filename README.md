@@ -1,66 +1,41 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Product Management Platform
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+## Overview
+This project is a **Product Management Platform**, aimed at providing a seamless user experience for managing products using **Laravel**, **Vue.js**, and **Inertia.js**. The project currently includes essential models, CRUD operations, user authentication, and a product page that is in progress.
 
-## About Laravel
+### What Has Been Done So Far
+- **Models Created:**
+  - Implemented models for:
+    - **User**: To manage user information and authentication.
+    - **Product**: To handle product details and management.
+    - **Bid**: To manage bids made on products.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+- **Migrations Added:**
+  - Created the necessary migrations to set up the database structure for users, products, and bids.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+- **ProductController with CRUD Operations:**
+  - Developed the **ProductController** to include all CRUD operations (Create, Read, Update, Delete) for efficient product management.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+- **Model Relationships:**
+  - Defined relationships between models to ensure data integrity and proper linking between users, products, and bids.
 
-## Learning Laravel
+- **Added Sign-In with Laravel Breeze:**
+  - Integrated a simple and user-friendly authentication system using **Laravel Breeze** to handle user registration and login.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+- **Added Vue with Inertia.js:**
+  - Set up **Vue.js** with **Inertia.js** to create a reactive and dynamic single-page application experience.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+- **Vue Product Page:**
+  - Started developing the product page using **Vue.js** to display products with interactive features for better product management.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+- **Filtering System:**
+  - Implemented basic filtering functionality (still in progress) to refine search results based on product and seller attributes.
 
-## Laravel Sponsors
+## Project Status
+- **Backend**: The backend development is almost complete with all essential functionalities implemented.
+- **Frontend**: Work is in progress to fully integrate the backend with Vue.js to enhance the user interface and interactivity.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+### Next Steps
+- Complete the Vue.js product page with all interactive features.
+- Enhance the filtering functionality for a more refined search experience on the frontend.
+- Fully integrate the frontend with the backend to ensure a smooth user experience.
