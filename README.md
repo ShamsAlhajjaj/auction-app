@@ -1,9 +1,9 @@
-# Auction- system
+# Auction-app
 
 ## Overview
-This project is a **Product Management Platform**, aimed at providing a seamless user experience for managing products using **Laravel**, **Vue.js**, and **Inertia.js**. The project currently includes essential models, CRUD operations, user authentication, and a product page that is in progress.
+This project is a **Auction-app**, aimed at providing a seamless user experience for managing products using **Laravel**, **Vue.js**, and **Inertia.js**. The project currently includes essential models, CRUD operations, user authentication, and a product page that is in progress.
 
-### What Has Been Done So Far
+### Features
 - **Models Created:**
   - Implemented models for:
     - **User**: To manage user information and authentication.
@@ -30,12 +30,3 @@ This project is a **Product Management Platform**, aimed at providing a seamless
 
 - **Filtering System:**
   - Implemented basic filtering functionality (still in progress) to refine search results based on product and seller attributes.
-
-## Project Status
-- **Backend**: The backend development is almost complete with all essential functionalities implemented.
-- **Frontend**: Work is in progress to fully integrate the backend with Vue.js to enhance the user interface and interactivity.
-
-### Next Steps
-- Complete the Vue.js product page with all interactive features.
-- Enhance the filtering functionality for a more refined search experience on the frontend.
-- Fully integrate the frontend with the backend to ensure a smooth user experience.
