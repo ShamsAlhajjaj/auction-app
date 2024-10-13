@@ -1,4 +1,4 @@
-# Product Management Platform
+# Auction- system
 
 ## Overview
 This project is a **Product Management Platform**, aimed at providing a seamless user experience for managing products using **Laravel**, **Vue.js**, and **Inertia.js**. The project currently includes essential models, CRUD operations, user authentication, and a product page that is in progress.
