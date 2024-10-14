@@ -71,6 +71,13 @@ Installation and Setup
 ```
    php artisan serve
 ```
+
+8. Compile Frontend Assets
+```
+   npm install
+
+   npm run dev
+```
 Routes Overview
 ---------------
 
