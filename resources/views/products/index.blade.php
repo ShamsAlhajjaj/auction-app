@@ -28,7 +28,7 @@
 
         <div class="row">
             @foreach ($products as $product)
-                <div class="col-md-3 mb-4"> <!-- Change col-md-4 to col-md-3 for 4 cards per row -->
+                <div class="col-md-3 mb-4"> 
                     <div class="card">
                         <img src="{{ asset('images/' . $product->image) }}" class="card-img-top" alt="{{ $product->name }}">
                         <div class="card-body">

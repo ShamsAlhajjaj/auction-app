@@ -15,7 +15,7 @@ class Product extends Model
         'image',
         'user_id',
     ];
-
+    // Models Relationships
     public function user(): BelongsTo
     {
         return $this->belongsTo(User::class);

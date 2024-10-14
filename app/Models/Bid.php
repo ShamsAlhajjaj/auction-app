@@ -8,6 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Bid extends Model
 {
     use HasFactory;
+    // Models Relationships
     public function product()
     {
         return $this->belongsTo(Product::class);

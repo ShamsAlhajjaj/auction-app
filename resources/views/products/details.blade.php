@@ -9,14 +9,14 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
-            background-color: #f8f9fa; /* Light background color */
+            background-color: #f8f9fa; 
         }
         .container {
             margin-top: 50px;
-            background-color: white; /* White background for the details */
+            background-color: white;
             padding: 20px;
             border-radius: 5px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
     </style>
 </head>
@@ -29,20 +29,6 @@
         <div class="text-center mb-4">
             <img src="{{ asset('images/' . $product->image) }}" alt="Product Image" class="img-fluid" style="max-width: 300px;">
         </div>
-        {{-- <form action="{{ route('bids.store') }}" method="post" class="text-center" onsubmit="return confirm('Are you sure you want to submit this offer?');">
-            @csrf 
-            <input type="hidden" name="product_id" value="{{ $product->id }}">
-            <div class="mb-3">
-                <input type="number" placeholder="Offer Price ($)" name="offer_price" class="form-control" required>
-            </div>
-            <button type="submit" class="btn btn-primary">Submit Offer</button>
-        </form>
-        @if (session('success'))
-            <div class="alert alert-success alert-dismissible fade show" role="alert">
-                {{ session('success') }}
-                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-            </div>
-        @endif         --}}
         @if (session('success'))
             <div class="alert alert-success alert-dismissible fade show" role="alert">
                 {{ session('success') }}

@@ -7,9 +7,7 @@ use Illuminate\Http\Request;
 
 class ProductController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     */
+
     public function index()
     {
         $query = Product::query();
@@ -31,10 +29,6 @@ class ProductController extends Controller
         return view('products/index', ['products' => $products]);
     }
 
-
-    /**
-     * Store a newly created resource in storage.
-     */
 
      public function store(Request $request)
      {
@@ -76,9 +70,6 @@ class ProductController extends Controller
      
      
 
-    /**
-     * Display the specified resource.
-     */
     public function show($productId)
     {
         // Query the product by its ID and include the seller's (user's) information
@@ -94,31 +85,17 @@ class ProductController extends Controller
     }
     
     public function myProducts()
-{
-    // Get the currently authenticated user
-    $user = Auth::user();
-
-    // Fetch the products owned by the user along with their bids
-    $products = Product::with(['bids.user'])->where('user_id', $user->id)->get();
-
-    return view('products.myProducts', compact('products'));
-}
-
-    /**
-     * Show the form for editing the specified resource.
-     */
-    public function edit(string $id)
     {
-        //
+        // Get the currently authenticated user
+        $user = Auth::user();
+
+        // Fetch the products owned by the user along with their bids
+        $products = Product::with(['bids.user'])->where('user_id', $user->id)->get();
+
+        return view('products.myProducts', compact('products'));
     }
 
-    /**
-     * Update the specified resource in storage.
-     */
-    public function update(Request $request, string $id)
-    {
-        //
-    }
+
 
     /**
      * Remove the specified resource from storage.
